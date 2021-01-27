@@ -1,5 +1,5 @@
 exports.getType = function (_url) {
-  var types = {
+  const types = {
     ".html": "text/html",
     ".css": "text/css",
     ".js": "text/javascript",
@@ -8,7 +8,7 @@ exports.getType = function (_url) {
     ".gif": "image/gif",
     ".svg": "svg+xml"
   }
-  for (var key in types) {
+  for (let key in types) {
     if (_url.endsWith(key)) {
       return types[key];
     }
