@@ -5,7 +5,7 @@
 
 ## Herokuデプロイ手順
 1. heroku 登録  
-1. eroku CLIダウンロード+インストール  
+1. heroku CLIダウンロード+インストール  
 1. heroku login  
 1. heroku create  
 1. git push heroku master  
