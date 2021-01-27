@@ -1,9 +1,9 @@
-var http = require('http');
-var fs = require('fs');
-var info = require('./info.js');
+const http = require('http');
+const fs = require('fs');
+const info = require('./info.js');
  
-var server = http.createServer(function(req, res) {
-    var url = "views" + (req.url.endsWith("/") ? req.url + "index.html" : req.url);
+const server = http.createServer(function(req, res) {
+    const url = "views" + (req.url.endsWith("/") ? req.url + "index.html" : req.url);
     if (fs.existsSync(url)) {
       fs.readFile(url, (err, data) => {
         if (!err) {
